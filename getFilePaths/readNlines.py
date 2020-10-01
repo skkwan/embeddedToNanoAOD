@@ -1,3 +1,6 @@
+# readNlines.py
+
+# Example:
 # python3 readNlines.py 2018/EmbeddingRun2018A-MuTau.list 2018/EmbeddingRun2018/ EmbeddingRun2018
 
 import argparse
@@ -10,6 +13,8 @@ def next_n_lines(file_opened, N):
     return [x.strip() for x in islice(file_opened, N)]
 
 def main(fullList, outputDir, sample):
+    ''' Writes _BATCH_1.list, _BATCH_2.list etc. to outputDir, 250 lines at a time. '''
+
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
     print("Directory '%s' opened/created" %outputDir)
@@ -33,9 +38,6 @@ def main(fullList, outputDir, sample):
             else:
                 break
                 
-    
-
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

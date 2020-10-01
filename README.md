@@ -12,7 +12,9 @@ and git clone this repo.
 
 ## Converting MiniAOD to NanoAOD
 
-1. Get the logical file names to the input MiniAOD samples (edit `logicalFileNames.txt`)
+1. (Do only once, each time you change the datasets)
+   Get the logical file names to the input MiniAOD samples (edit `logicalFileNames.txt`). This step also makes directories
+   with shorter (200 files) .list files. 
 ```
 cmsenv
 voms-proxy-init --voms cms

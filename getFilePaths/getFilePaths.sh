@@ -22,7 +22,9 @@ do
 
   # Make a directory to hold the batches
   BATCHDIR=${YEAR}/${DATASETNAME}/
-  
+  mkdir -p ${BATCHDIR}
+  rm ${BATCHDIR}/*
+
   # python3 readNlines.py 2018/EmbeddingRun2018A-MuTau.list 2018/EmbeddingRun2018A-MuTau/ EmbeddingRun2018
   python3 readNlines.py ${FULLLIST} ${BATCHDIR} ${DATASETNAME}
   
