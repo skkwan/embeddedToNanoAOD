@@ -1,7 +1,7 @@
 # Usage: (e.g. on lxplus)
 # First make sure your grid certificate is created (voms proxy init etc.)
 
-LFNLIST="logicalFileNames.txt"
+LFNLIST="logicalFileNames-2017.txt"
 
 while IFS=, read -r YEAR DATASETNAME DASDATASET
 do 
@@ -12,7 +12,8 @@ do
   dasgoclient --query="file dataset=${DASDATASET} instance=prod/phys03" > ${TEMP}
 
   # Pre-pend the redirector in front of each line
-  awk '{print "root://cmsxrootd.fnal.gov/" $0}' ${TEMP} > ${FULLLIST}
+  # awk '{print "root://cmsxrootd.fnal.gov/" $0}' ${TEMP} > ${FULLLIST}
+  awk '{print "root://cms-xrd-global.cern.ch/" $0}' ${TEMP} > ${FULLLIST}
 
   # Check it looks ok
   head -5 ${FULLLIST}
@@ -25,8 +26,7 @@ do
   mkdir -p ${BATCHDIR}
   rm ${BATCHDIR}/*
 
-  # python3 readNlines.py 2018/EmbeddingRun2018A-MuTau.list 2018/EmbeddingRun2018A-MuTau/ EmbeddingRun2018
-  python3 readNlines.py ${FULLLIST} ${BATCHDIR} ${DATASETNAME}
+  python readNlines.py ${FULLLIST} ${BATCHDIR} ${DATASETNAME}
   
 
 done < "${LFNLIST}"

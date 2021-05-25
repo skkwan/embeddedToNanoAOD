@@ -27,7 +27,7 @@ do
 	# Declare scratch directory to put each config.py file
 	TEMP_DIR="temp/${YEAR}/${SAMPLE}/"
 	# Declare directory for output NanoAOD n-tuples
-	OUT_DIR="nanoAODFiles/${YEAR}/${SAMPLE}/"
+	OUT_DIR="/eos/user/s/skkwan/embeddedNanoAOD/${YEAR}/${SAMPLE}/"
 	mkdir -p ${TEMP_DIR}
 	mkdir -p ${OUT_DIR}
 
@@ -42,9 +42,16 @@ do
 	    TEMPLATE=$(cat "scripts/suffixForNanoProdPython.txt")
 
 	    # Declare output NanoAOD n-tuple file path and name
-	    OUT_PATH="file:${OUT_DIR}${STEM}_NANO.root"
-	    echo ${OUT_PATH}
-
+	    OUT_PATH_ONLY="${OUT_DIR}${STEM}_NANO.root"
+	    echo ${OUT_PATH_ONLY}
+	    
+	    if test -f "${OUT_PATH_ONLY}"; then
+		echo ">>> ${OUT_PATH_ONLY} exists, skipping"
+		continue
+	    fi
+	    
+	    OUT_PATH="file:${OUT_PATH_ONLY}"
+	    
 	    # Replace INPUT.ROOT and OUTPUT.ROOT in the template with our files
 	    list=$(cat ${s})
 #	    echo ${list}
