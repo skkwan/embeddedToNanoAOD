@@ -1,0 +1,13 @@
+executable	= (CMSSW_BASE)/src/embeddedToNanoAOD/condor/job.sh
+
+getenv          = True	
+proxy_filename  = /afs/cern.ch/user/s/skkwan/private/x509up_file
+
++MaxDuration	= 1800
+
+arguments	= $(proxy_filename) (jobdir) (jobname) (fileToRun)	
+output		= (jobdir)/test_(jobname).out
+error		= (jobdir)/test_(jobname).err
+log		= (jobdir)/test_(jobname).log
+
+queue
