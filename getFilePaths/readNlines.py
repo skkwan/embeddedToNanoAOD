@@ -13,16 +13,16 @@ def next_n_lines(file_opened, N):
     return [x.strip() for x in islice(file_opened, N)]
 
 def main(fullList, outputDir, sample):
-    ''' Writes _BATCH_1.list, _BATCH_2.list etc. to outputDir, 250 lines at a time. '''
+    ''' Writes _BATCH_1.list, _BATCH_2.list etc. to outputDir, 5 lines at a time. '''
 
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
     print("Directory '%s' opened/created" %outputDir)
 
-    batchNumber = 0
+    batchNumber = -1
     with open(fullList, 'r') as f:
         while True:
-            nextLines = next_n_lines(f, 250)
+            nextLines = next_n_lines(f, 5)
             if nextLines:
                 batchNumber += 1
                 print(batchNumber)
