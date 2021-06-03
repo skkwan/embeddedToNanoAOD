@@ -3,6 +3,8 @@ executable	= (CMSSW_BASE)/src/embeddedToNanoAOD/condor/job.sh
 getenv          = True	
 proxy_filename  = /afs/cern.ch/user/s/skkwan/private/x509up_file
 
++JobFlavour 	= "longlunch"
+
 arguments	= $(proxy_filename) (jobdir) (sampleName) (fileToRun)	
 output		= (jobdir)/test_(sampleName)_$(Process).out
 error		= (jobdir)/test_(sampleName)_$(Process).err
