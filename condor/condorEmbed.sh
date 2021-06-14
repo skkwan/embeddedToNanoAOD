@@ -12,7 +12,7 @@ cmsenv
 # Check that the input .list files exist first!
 #--------------------------------------------------------
 echo ">>> condorEmbed.sh: Reading from ${SAMPLES}..."
-while IFS=, read -r YEAR SAMPLE INPUT_DIR
+while IFS=, read -r YEAR SAMPLE INPUT_DIR BASE_SCRIPT
 do
     echo ">>> condorEmbed.sh: Starting sample ${SAMPLE} and input directory: ${INPUT_DIR}"
 
@@ -47,7 +47,7 @@ JOB_DIR="/afs/cern.ch/work/s/skkwan/private/condor_embed"
 BASE_SCRIPT="../scripts/nanoProd_17_NANO.py"
 
 # Access the .csv list of samples to run over
-while IFS=, read -r YEAR SAMPLE INPUT_DIR
+while IFS=, read -r YEAR SAMPLE INPUT_DIR BASE_SCRIPT
 do
     {
 	# Declare scratch directory to put each config.py file                                                                                               
