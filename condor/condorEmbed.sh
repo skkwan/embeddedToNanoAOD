@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: source condorEmbed.sh [samples.csv] [optional argument: REMAKE]
+# Usage: source condorEmbed.sh [samples.csv] [REMAKE or USESAME]
 # REMAKE : remake the unique .py files
 
 SAMPLES=$1
@@ -38,13 +38,8 @@ cp ${MYPROXYPATH} /afs/cern.ch/user/s/skkwan/private/x509up_file
 
 DATETIME="$(date +"%b-%d-%Y-%Hh%Mm")"
 
-EOS_DIR="/eos/user/s/skkwan/embeddedNanoAOD" 
-WORKING_DIR="${CMSSW_BASE}/src/embeddedToNanoAOD"
+# WORKING_DIR="${CMSSW_BASE}/src/embeddedToNanoAOD"
 JOB_DIR="/afs/cern.ch/work/s/skkwan/private/condor_embed"
-
-
-# BASE SCRIPT: change for year 2017 2018 etc. 
-BASE_SCRIPT="../scripts/nanoProd_17_NANO.py"
 
 # Access the .csv list of samples to run over
 while IFS=, read -r YEAR SAMPLE INPUT_DIR BASE_SCRIPT
