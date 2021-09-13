@@ -5,7 +5,7 @@ proxy_filename  = /afs/hep.wisc.edu/home/skkwan/public/x509up_file
 
 +JobFlavour 	= "longlunch"
 
-arguments	= $(proxy_filename) (jobdir) (sampleName) (fileToRun) (inputFileList) (outputFile) (maxEvents)
+arguments	= $(proxy_filename) (jobdir) (sampleName) (fileToRun) (inputFileList) (outputFile) (maxEvents) (hdfsDir)
 output		= (jobdir)/test_(sampleName)_$(Process).out
 error		= (jobdir)/test_(sampleName)_$(Process).err
 log		= (jobdir)/test_(sampleName)_$(Process).log

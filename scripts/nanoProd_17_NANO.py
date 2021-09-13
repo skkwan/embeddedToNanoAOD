@@ -4,6 +4,7 @@
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
 # with command line options: myNanoProdData2017 -s NANO --data --eventcontent NANOAOD --datatier NANOAOD --no_exec --conditions 102X_dataRun2_v11 --era Run2_2017,run2_nanoAOD_94XMiniAODv2 --customise_commands=process.add_(cms.Service('InitRootHandlers', EnableIMT = cms.untracked.bool(False)))
 import FWCore.ParameterSet.Config as cms
+import FWCore.ParameterSet.VarParsing as VarParsing
 
 from Configuration.StandardSequences.Eras import eras
 
@@ -20,8 +21,18 @@ process.load('PhysicsTools.NanoAOD.nano_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
+# setup 'analysis'  options
+options = VarParsing.VarParsing ('analysis')
+# setup any defaults you want
+options.outputFile = 'file:myOutput.root'
+options.inputFiles= 'root://cms-xrd-global.cern.ch//store/user/jbechtel/gc_storage/MuTau_data_2018ABC_CMSSW1020/TauEmbedding_MuTau_data_2018ABC_CMSSW1020_Run2018A/20/merged_19.root'
+options.maxEvents = 5 # -1 means all events
+
+# get and parse the command line arguments
+options.parseArguments()
+
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(-1)
+    input = cms.untracked.int32(options.maxEvents)
 )
 
 # Input source
@@ -93,4 +104,8 @@ from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEar
 process = customiseEarlyDelete(process)
 # End adding early deletion
 
+process.source = cms.Source("PoolSource",
+                            fileNames = cms.untracked.vstring(options.inputFiles)
+                            )
 
+process.NANOAODoutput.fileName = cms.untracked.string(options.outputFile)

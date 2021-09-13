@@ -103,13 +103,17 @@ do
 	#PYNAME="tempJOB_${SAMPLE}_BATCH_\$(Process).py"
 	LISTNAME="${WORKING_AREA}/${INPUT_DIR}/${SAMPLE}_BATCH_\$(Process).list"
 	OUTPUTFILE="${SAMPLE}_\$(Process).root"
-	MAXEVENTS=-1
+	MAXEVENTS=5
 	#NINSTANCES=`ls ${OUTDIR}/tempJOB_*.py | wc -l`
 	NINSTANCES=1
 	
 	# Make a subfile in the temp directory
 	subfile=${OUTDIR}/job_${SAMPLE}.sub
 	echo "Creating subfile at ${subfile}"
+
+	# Make sure the /hdfs area is initialized
+	HDFSDIR="skkwan/EmbeddedNanoAOD/${YEAR}/${SAMPLE}/"
+	mkdir -p /hdfs/store/user/${HDFSDIR}
 
 	cp jobTemplate.sub ${subfile}
 	sed -i "s|(CMSSW_BASE)|${CMSSW_BASE}|g" ${subfile}
@@ -120,6 +124,7 @@ do
 	sed -i "s|(outputFile)|${OUTPUTFILE}|g" ${subfile}
 	sed -i "s|(maxEvents)|${MAXEVENTS}|g" ${subfile}
 	sed -i "s|(nInstances)|${NINSTANCES}|g" ${subfile}
+	sed -i "s|(hdfsDir)|${HDFSDIR}|g" ${subfile}
 	condor_submit ${subfile}
 
     } 

@@ -1,3 +1,3 @@
 
 
-source condorEmbed.sh ../embeddedMiniAOD-2018A.csv REMAKE
+source condorEmbed.sh ../embeddedMiniAOD-2017B.csv 
