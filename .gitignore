@@ -3,4 +3,4 @@
 temp/*
 getFilePaths/2017/*/*.list
 getFilePaths/2018/*/*.list
-*BATCH*.list
+tempJOB*BATCH*.list

@@ -1,11 +1,11 @@
 executable	= (CMSSW_BASE)/src/embeddedToNanoAOD/condor/job.sh
 
 getenv          = True	
-proxy_filename  = /afs/cern.ch/user/s/skkwan/private/x509up_file
+proxy_filename  = /afs/hep.wisc.edu/home/skkwan/public/x509up_file
 
 +JobFlavour 	= "longlunch"
 
-arguments	= $(proxy_filename) (jobdir) (sampleName) (fileToRun)	
+arguments	= $(proxy_filename) (jobdir) (sampleName) (fileToRun) (inputFileList) (outputFile) (maxEvents)
 output		= (jobdir)/test_(sampleName)_$(Process).out
 error		= (jobdir)/test_(sampleName)_$(Process).err
 log		= (jobdir)/test_(sampleName)_$(Process).log

@@ -13,7 +13,7 @@ def next_n_lines(file_opened, N):
     return [x.strip() for x in islice(file_opened, N)]
 
 def main(fullList, outputDir, sample):
-    ''' Writes _BATCH_1.list, _BATCH_2.list etc. to outputDir, 5 lines at a time. '''
+    ''' Writes _BATCH_0.list, _BATCH_1.list, _BATCH_2.list etc. to outputDir, 5 lines at a time. '''
 
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
@@ -22,7 +22,7 @@ def main(fullList, outputDir, sample):
     batchNumber = -1
     with open(fullList, 'r') as f:
         while True:
-            nextLines = next_n_lines(f, 5)
+            nextLines = next_n_lines(f, 1)
             if nextLines:
                 batchNumber += 1
                 print(batchNumber)
@@ -31,9 +31,11 @@ def main(fullList, outputDir, sample):
                     for l in nextLines:
                         # If not the last line
                         if (l != nextLines[-1]):
-                            targetFile.write('\'%s\', ' % l)
+                            # targetFile.write('\'%s\', ' % l)
+                            targetFile.write('%s, ' % l) 
                         else:
-                            targetFile.write('\'%s\'' % l)
+                            # targetFile.write('\'%s\'' % l)
+                            targetFile.write('%s' % l)    
 
             else:
                 break

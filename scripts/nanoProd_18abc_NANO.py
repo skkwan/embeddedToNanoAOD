@@ -4,6 +4,7 @@
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
 # with command line options: nanoProd_18abc -s NANO --data --eventcontent NANOAOD --datatier NANOAOD --no_exec --conditions 102X_dataRun2_Sep2018ABC_v2 --era Run2_2018,run2_nanoAOD_102Xv1 --filein file:test_18abc.root --fileout file:test_nano_18abc.root
 import FWCore.ParameterSet.Config as cms
+import FWCore.ParameterSet.VarParsing as VarParsing
 
 from Configuration.Eras.Era_Run2_2018_cff import Run2_2018
 from Configuration.Eras.Modifier_run2_nanoAOD_102Xv1_cff import run2_nanoAOD_102Xv1
@@ -21,11 +22,21 @@ process.load('PhysicsTools.NanoAOD.nano_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
+# setup 'analysis'  options
+options = VarParsing.VarParsing ('analysis')
+# setup any defaults you want
+options.outputFile = 'file:myOutput.root'
+options.inputFiles= 'root://cms-xrd-global.cern.ch//store/user/jbechtel/gc_storage/MuTau_data_2018ABC_CMSSW1020/TauEmbedding_MuTau_data_2018ABC_CMSSW1020_Run2018A/20/merged_19.root'
+options.maxEvents = 5 # -1 means all events
+
+# get and parse the command line arguments
+options.parseArguments()
+
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(-1)
+    input = cms.untracked.int32(options.maxEvents)
 )
 
-# Input source
+# Input source (will be overwritten)
 process.source = cms.Source("PoolSource",
                             fileNames = cms.untracked.vstring('file:example/merged_EXAMPLE_18a.root'),
                             secondaryFileNames = cms.untracked.vstring()
@@ -93,3 +104,8 @@ from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEar
 process = customiseEarlyDelete(process)
 # End adding early deletion
 
+process.source = cms.Source("PoolSource",
+                            fileNames = cms.untracked.vstring(options.inputFiles)
+                            )
+
+process.NANOAODoutput.fileName = cms.untracked.string(options.outputFile)

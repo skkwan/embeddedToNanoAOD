@@ -1,7 +1,7 @@
 # Usage: (e.g. on lxplus)
 # First make sure your grid certificate is created (voms proxy init etc.)
 
-LFNLIST="logicalFileNames-2017.txt"
+LFNLIST="logicalFileNames-2018.txt"
 
 while IFS=, read -r YEAR DATASETNAME DASDATASET
 do 
