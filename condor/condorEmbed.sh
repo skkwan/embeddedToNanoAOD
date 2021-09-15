@@ -65,55 +65,24 @@ do
 	# Each INPUT_DIR has a bunch of .list files in it
 	FILES="${WORKING_AREA}/${INPUT_DIR}*.list"
 
-
-	# if [[ "$REMAKE" == *"REMAKE"* ]]; then
-	#     # For each .list file, make a unique .py
-	#     for f in $FILES
-	#     do
-	# 	# echo ${f}
-	# 	# Get the file name with extension (merged_10.root, for example)
-	# 	STEM=$(basename "${f}" ".${f##*.}")
-	# 	# echo ${STEM}
-		
-	# 	# We will append the lines in this .txt file to the example config.py
-	# 	TEMPLATE=$(cat "../scripts/suffixForNanoProdPython.txt")
-		
-	# 	# Declare output NanoAOD n-tuple file path and name
-	# 	# OUT_PATH="file:${OUTDIR}/${STEM}_NANO.root"
-	# 	OUT_PATH="file:${STEM}_NANO.root" 
-	# 	# echo ${OUT_PATH}
-		
-	# 	# Replace INPUT.ROOT and OUTPUT.ROOT in the template with our files
-	# 	list=$(cat ${f})
-	# 	TEMPLATE2="${TEMPLATE/\'INPUT.ROOT\'/$list}"
-	# 	TEMPLATE3="${TEMPLATE2/OUTPUT.ROOT/${OUT_PATH}}"
-		
-	# 	# Declare the unique Python script, create it
-	# 	SINGLE_PYTHON="${DRIVDIR}/tempJOB_${STEM}.py"
-	# 	# echo ${SINGLE_PYTHON}
-	# 	cp ${BASE_SCRIPT} ${SINGLE_PYTHON}
-	# 	echo "${TEMPLATE3}" >> ${SINGLE_PYTHON}
-		
-	# 	# Now there is a unique .py that can be run standalone, in temp/, for example tempJOB_EmbeddingRun2017E-MuTau_BATCH_62.py
-	#     done
-	# fi
-	
 	# If we use the 'queue' command in Condor, we don't need to make one .sub file for each unique .py (that would take a long time just to submit)
 	# e.g. queue 100 will set $(Process) equal to 0 through 99 in the .sub file
-	#PYNAME="tempJOB_${SAMPLE}_BATCH_\$(Process).py"
 	LISTNAME="${WORKING_AREA}/${INPUT_DIR}/${SAMPLE}_BATCH_\$(Process).list"
 	OUTPUTFILE="${SAMPLE}_\$(Process).root"
-	MAXEVENTS=5
-	#NINSTANCES=`ls ${OUTDIR}/tempJOB_*.py | wc -l`
+	MAXEVENTS=2
+	# N_TOTAL_INSTANCES=`ls ${WORKING_AREA}/${INPUT_DIR}/*.list | wc -l`
+	N_TOTAL_INSTANCES=`find ${WORKING_AREA}/${INPUT_DIR}/ -name "Embedding*" | xargs ls -lrt | wc -l`
 	NINSTANCES=1
+	echo ">>> Submitting ${NINSTANCES} .list files, out of ${N_TOTAL_INSTANCES} total .lists..."
 	
 	# Make a subfile in the temp directory
 	subfile=${OUTDIR}/job_${SAMPLE}.sub
-	echo "Creating subfile at ${subfile}"
+	echo ">>> Creating subfile at ${subfile}..."
 
 	# Make sure the /hdfs area is initialized
 	HDFSDIR="skkwan/EmbeddedNanoAOD/${YEAR}/${SAMPLE}/"
 	mkdir -p /hdfs/store/user/${HDFSDIR}
+
 
 	cp jobTemplate.sub ${subfile}
 	sed -i "s|(CMSSW_BASE)|${CMSSW_BASE}|g" ${subfile}

@@ -39,7 +39,7 @@ echo "job.sh: Inputfilelist is $inputFileList, running with input files ${inputF
 cmsRun ${fileToRun} inputFiles=$inputFiles outputFile=$outputFile maxEvents=$maxEvents
 
 
-echo "Attempting to gfal-copy $outputFile :..." 
+echo "Attempting to gfal-copy $outputFile (unset the cmsenv environment first):..." 
 eval `scram unsetenv -sh`
 pwd
 ls
