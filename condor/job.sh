@@ -36,6 +36,7 @@ pwd
 inputFiles=$(cat $inputFileList)
 
 echo "job.sh: Inputfilelist is $inputFileList, running with input files ${inputFiles} and output file name ${outputFile}..." 
+voms-proxy-info -all -file ${X509_USER_PROXY}
 cmsRun ${fileToRun} inputFiles=$inputFiles outputFile=$outputFile maxEvents=$maxEvents
 
 
@@ -47,6 +48,7 @@ ls
 # Copying *.root is a little sloppy but we can do this because each job only produces
 # one output file.
 # Gets copied to /hdfs/store/user/skkwan/[..]
+voms-proxy-info -all -file ${X509_USER_PROXY}
 gfal-copy -p *.root davs://cmsxrootd.hep.wisc.edu:1094/store/user/$hdfsDir
 
 echo "End of attempt to gfal-copy $outputFile "
