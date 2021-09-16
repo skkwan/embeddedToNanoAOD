@@ -28,9 +28,12 @@ done < ${SAMPLES}
 # Get the voms-proxy-info certificate
 #--------------------------------------------------------
 export MYPROXYPATH="$(voms-proxy-info -path)"
-echo ">>> condorEmbed.sh: Found proxy at: ${MYPROXYPATH}, copying to /afs/hep.wisc.edu/home/skkwan/public/x509up_file "
 
-cp ${MYPROXYPATH} /afs/hep.wisc.edu/home/skkwan/public/x509up_file
+#export DESTINATION="/afs/hep.wisc.edu/home/skkwan/private/x509up"
+export DESTINATION="/nfs_scratch/skkwan/x509up" 
+
+echo ">>> condorEmbed.sh: Found proxy at: ${MYPROXYPATH}, copying to ${DESTINATION}"
+cp ${MYPROXYPATH} ${DESTINATION}
 
 #--------------------------------------------------------
 # Get the current date and time, needed for output files 
@@ -69,10 +72,12 @@ do
 	# e.g. queue 100 will set $(Process) equal to 0 through 99 in the .sub file
 	LISTNAME="${WORKING_AREA}/${INPUT_DIR}/${SAMPLE}_BATCH_\$(Process).list"
 	OUTPUTFILE="${SAMPLE}_\$(Process).root"
-	MAXEVENTS=2
-	# N_TOTAL_INSTANCES=`ls ${WORKING_AREA}/${INPUT_DIR}/*.list | wc -l`
+	MAXEVENTS=-1
 	N_TOTAL_INSTANCES=`find ${WORKING_AREA}/${INPUT_DIR}/ -name "Embedding*" | xargs ls -lrt | wc -l`
 	NINSTANCES=1
+	# NINSTANCES=${N_TOTAL_INSTANCES}
+	
+	echo ">>> Submitting with max ${MAXEVENTS} events (per input file) (-1: run over all events)..."
 	echo ">>> Submitting ${NINSTANCES} .list files, out of ${N_TOTAL_INSTANCES} total .lists..."
 	
 	# Make a subfile in the temp directory

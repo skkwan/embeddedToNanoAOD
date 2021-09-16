@@ -7,4 +7,5 @@
 # source condorEmbed.sh ../embeddedMiniAOD-2018A.csv 
 
 # Try all four data eras
-source condorEmbed.sh ../embeddedMiniAOD-2018.csv
+
+source condorEmbed.sh ../embeddedMiniAOD-2018A.csv
