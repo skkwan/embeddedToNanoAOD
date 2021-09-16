@@ -4,10 +4,12 @@ getenv          = True
 
 proxy_filename  = x509up
 #proxy_path      = /afs/hep.wisc.edu/home/skkwan/private/$(proxy_filename)
-proxy_path      = /nfs_scratch/skkwan/$(proxy_filename)
+#proxy_path      = /nfs_scratch/skkwan/$(proxy_filename)
 
-should_transfer_files = YES
-transfer_input_files = $(proxy_path)
+use_x509userproxy = true
+
+#should_transfer_files = YES
+#transfer_input_files = $(proxy_path)
 
 +JobFlavour 	= "longlunch"
 

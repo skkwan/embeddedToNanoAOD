@@ -7,9 +7,12 @@
 #  https://tier2.hep.caltech.edu/?page_id=141
 #----------------------------------------------- 
 
-export X509_USER_PROXY=$1
+#export X509_USER_PROXY=$1
+echo "Looking for x509 proxy in ${X509_USER_PROXY}..."
+echo ">>> voms-proxy-info -all"
 voms-proxy-info -all
-voms-proxy-info -all -file $1
+echo ">>> voms-proxy-info -all -file ${X509_USER_PROXY} "
+voms-proxy-info -all -file ${X509_USER_PROXY}
 
 export jobdir=$2
 export sampleName=$3
@@ -35,8 +38,10 @@ pwd
 # cmsRun tempJOB_EmbeddingRun2018A-MuTau_BATCH_1.py inputFiles='root://cms-xrd-global.cern.ch//store/user/jbechtel/gc_storage/MuTau_data_2018ABC_CMSSW1020/TauEmbedding_MuTau_data_2018ABC_CMSSW1020_Run2018A/20/merged_19.root' outputFile='myTest.root' maxEvents=5
 inputFiles=$(cat $inputFileList)
 
-echo "job.sh: Inputfilelist is $inputFileList, running with input files ${inputFiles} and output file name ${outputFile}..." 
-voms-proxy-info -all -file ${X509_USER_PROXY}
+echo "job.sh: Inputfilelist is $inputFileList, running with input files ${inputFiles} and output file name ${outputFile}..."
+
+echo "Prior to cmsRun: voms-proxy-info -all -file ${X509_USER_PROXY}"
+
 cmsRun ${fileToRun} inputFiles=$inputFiles outputFile=$outputFile maxEvents=$maxEvents
 
 
@@ -48,6 +53,7 @@ ls
 # Copying *.root is a little sloppy but we can do this because each job only produces
 # one output file.
 # Gets copied to /hdfs/store/user/skkwan/[..]
+
 voms-proxy-info -all -file ${X509_USER_PROXY}
 gfal-copy -p *.root davs://cmsxrootd.hep.wisc.edu:1094/store/user/$hdfsDir
 
