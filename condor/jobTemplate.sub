@@ -3,17 +3,16 @@ executable	= (CMSSW_BASE)/src/embeddedToNanoAOD/condor/job.sh
 getenv          = True	
 
 proxy_filename  = x509up
-#proxy_path      = /afs/hep.wisc.edu/home/skkwan/private/$(proxy_filename)
-#proxy_path      = /nfs_scratch/skkwan/$(proxy_filename)
-
 use_x509userproxy = true
 
-#should_transfer_files = YES
-#transfer_input_files = $(proxy_path)
+should_transfer_files = YES
+transfer_input_files = (fileToRun_afs), (inputFileList_afs)
 
 +JobFlavour 	= "longlunch"
 
-arguments	= $(proxy_filename) (jobdir) (sampleName) (fileToRun) (inputFileList) (outputFile) (maxEvents) (hdfsDir)
+request_memory  = 200MB
+
+arguments	= $(proxy_filename) (jobdir) (sampleName) (fileToRun_name) (inputFileList_name) (outputFile) (maxEvents) (hdfsDir)
 output		= (jobdir)/test_(sampleName)_$(Process).out
 error		= (jobdir)/test_(sampleName)_$(Process).err
 log		= (jobdir)/test_(sampleName)_$(Process).log

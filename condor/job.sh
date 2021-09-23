@@ -29,7 +29,10 @@ echo "System software: `cat /etc/redhat-release`" #Operating System on that node
 source /cvmfs/cms.cern.ch/cmsset_default.sh 
 scramv1 project CMSSW CMSSW_10_6_16 # cmsrel is an alias not on the workers
 ls -alrth
+mv ${fileToRun} CMSSW_10_6_16/src/
+mv ${inputFileList} CMSSW_10_6_16/src/
 cd CMSSW_10_6_16/src/
+
 eval `scramv1 runtime -sh` # cmsenv is an alias not on the workers
 echo $CMSSW_BASE "is the CMSSW we created on the local worker node"
 pwd
@@ -41,7 +44,7 @@ inputFiles=$(cat $inputFileList)
 echo "job.sh: Inputfilelist is $inputFileList, running with input files ${inputFiles} and output file name ${outputFile}..."
 
 echo "Prior to cmsRun: voms-proxy-info -all -file ${X509_USER_PROXY}"
-
+pwd
 cmsRun ${fileToRun} inputFiles=$inputFiles outputFile=$outputFile maxEvents=$maxEvents
 
 
@@ -55,6 +58,6 @@ ls
 # Gets copied to /hdfs/store/user/skkwan/[..]
 
 voms-proxy-info -all -file ${X509_USER_PROXY}
-gfal-copy -p *.root davs://cmsxrootd.hep.wisc.edu:1094/store/user/$hdfsDir
+gfal-copy -f -p *.root davs://cmsxrootd.hep.wisc.edu:1094/store/user/$hdfsDir
 
 echo "End of attempt to gfal-copy $outputFile "
