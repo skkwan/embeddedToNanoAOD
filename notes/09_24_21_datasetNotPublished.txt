@@ -1,0 +1,20 @@
+[skkwan@login05 embeddedToNanoAOD]$ crab status -d crab_projects/noPublish_crab_EmbeddingRun2018A_MuTauFinalState-inputDoubleMu/
+CRAB project directory:		    	 /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_16/src/embeddedToNanoAOD/crab_projects/noPublish_crab_EmbeddingRun2018A_MuTauFinalState-inputDoubleMu
+Task name:					210923_193726:skkwan_crab_EmbeddingRun2018A_MuTauFinalState-inputDoubleMu
+Grid scheduler - Task Worker:			crab3@vocms0106.cern.ch - crab-prod-tw01
+Status on the CRAB server:			SUBMITTED
+Task URL to use for HELP:			https://cmsweb.cern.ch/crabserver/ui/task/210923_193726%3Askkwan_crab_EmbeddingRun2018A_MuTauFinalState-inputDoubleMu
+Dashboard monitoring URL:			https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=210923_193726%3Askkwan_crab_EmbeddingRun2018A_MuTauFinalState-inputDoubleMu&from=1632422246000&to=now
+Status on the scheduler:			COMPLETED
+
+Jobs status:                    finished		100.0% (217/217)
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1623MB min, 1755MB max, 1634MB ave
+ * Runtime: 0:27:43 min, 5:54:47 max, 2:59:01 ave
+ * CPU eff: 62% min, 97% max, 86% ave
+ * Waste: 11:22:43 (2% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_16/src/embeddedToNanoAOD/crab_projects/noPublish_crab_EmbeddingRun2018A_MuTauFinalState-inputDoubleMu/crab.log
