@@ -7,12 +7,22 @@ See [list of samples](https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTau
 ## Setup
 On an lxplus7 machine:
 ```
-cmsrel 10_6_16
+cmsrel CMSSW_10_6_16
 cd CMSSW_10_6_16/src
+git clone --branch hep-wisc --single-branch git@github.com:skkwan/embeddedToNanoAOD.git
 ```
-and git clone this repo.
 
-## Converting MiniAOD to NanoAOD
+## CRAB for producing NanoAOD from MiniAOD
+For CRAB, all you need is to submit from the main directory:
+```
+# First change 'skkwan' in the crabConfig file's outLFNDirBase
+cmsenv
+crab submit -c crabConfig-2018A.py
+```
+In this case, the `.py` called in the job is `scripts/nanoProd_18abc_NANO_CRAB.py`.
+
+
+## (Deprecated: ignore) Condor for producing NanoAOD from MiniAOD
 
 1. (Do only once, each time you change the datasets)
    Get the logical file names to the input MiniAOD samples (edit `logicalFileNames.txt`). This step also makes directories
@@ -26,7 +36,7 @@ source getFilePaths.sh
 ```
 
 2. Make a `.csv` list of datasets like this (Year, name of dataset, path to `.list` logical file names made in previous step) :
-`2018,EmbeddingRun2018B-MuTau,getFilePaths/2018/EmbeddingRun2018B-MuTau`	    
+`2018,EmbeddingRun2018B-MuTau,getFilePaths/2018/EmbeddingRun2018B-MuTau`     
 
 3. Edit `condorEmbed.sh` to use the correct template .py script, and edit the `.sub` file so it calls `queue` however many times you want
 
@@ -42,4 +52,3 @@ source condorEmbed.sh ../embeddedMiniAOD-2017.csv
 ```
 # cd to the directory with all the .root files
 ls -d $PWD/*.root > /afs/cern.ch/work/s/skkwan/public/hToAA/syncNanoAOD/nanoAODfilepaths/2017/Embedded-Run2017B-Mu
-```
