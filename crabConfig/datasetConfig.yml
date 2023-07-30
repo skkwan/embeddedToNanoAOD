@@ -4,10 +4,11 @@
 prodtag: 106X_UL18_MiniAODv1_NanoAODv9
 
 Embed2018:
+  year: 2018
   # Directory where crab config files will be placed
   workingdir: temp/
   # Path from inside temp/ to the cmsRun script
-  cmsRun_script: ../2018/scripts/embedding_nanoAOD_18.py
+  cmsRun_script: 2018/scripts/embedding_nanoAOD_18.py
   template_crab: 2018/scripts/crabConfig-2018-TEMPLATE.py
 
   datasets:
@@ -24,8 +25,9 @@ Embed2018:
 
 
 Embed2017:
+  year: 2017
   workingdir: temp/
-  cmsRun_script: ../2017/scripts/embedding_nanoAOD_17.py
+  cmsRun_script: 2017/scripts/embedding_nanoAOD_17.py
   template_crab: 2017/scripts/crabConfig-2017-TEMPLATE.py
 
   datasets:
@@ -43,29 +45,31 @@ Embed2017:
     EmbeddingRun2017F_ElTau: /EmbeddingRun2017F/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
 
 Embed2016_HIPM:
+  year: 2016
   workingdir: temp/
-  cmsRun_script: ../2016/scripts/embedding_nanoAOD_16_HIPM.py
+  cmsRun_script: 2016/scripts/embedding_nanoAOD_16_HIPM.py
   template_crab: 2016/scripts/crabConfig-2016-TEMPLATE.py
 
   datasets:
     # MuTau
-    EmbeddingRun2016B_ver1_MuTau: /EmbeddingRun2016-HIPM_B_ver1/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016B_ver2_MuTau: /EmbeddingRun2016-HIPM_B_ver2/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016C_MuTau: /EmbeddingRun2016-HIPM_C/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016D_MuTau: /EmbeddingRun2016-HIPM_D/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016E_MuTau: /EmbeddingRun2016-HIPM_E/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016F_MuTau: /EmbeddingRun2016-HIPM_F/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver1_MuTau: /EmbeddingRun2016-HIPM_B_ver1/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver2_MuTau: /EmbeddingRun2016-HIPM_B_ver2/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016C_HIPM_MuTau: /EmbeddingRun2016-HIPM_C/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016D_HIPM_MuTau: /EmbeddingRun2016-HIPM_D/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016E_HIPM_MuTau: /EmbeddingRun2016-HIPM_E/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016F_HIPM_MuTau: /EmbeddingRun2016-HIPM_F/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
     # ETau
-    EmbeddingRun2016B_ver1_ElTau: /EmbeddingRun2016-HIPM_B_ver1/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016B_ver2_ElTau: /EmbeddingRun2016-HIPM_B_ver2/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016C_ElTau: /EmbeddingRun2016-HIPM_C/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016D_ElTau: /EmbeddingRun2016-HIPM_D/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016E_ElTau: /EmbeddingRun2016-HIPM_E/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016F_ElTau: /EmbeddingRun2016-HIPM_F/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver1_ElTau: /EmbeddingRun2016-HIPM_B_ver1/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver2_ElTau: /EmbeddingRun2016-HIPM_B_ver2/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016C_HIPM_ElTau: /EmbeddingRun2016-HIPM_C/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016D_HIPM_ElTau: /EmbeddingRun2016-HIPM_D/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016E_HIPM_ElTau: /EmbeddingRun2016-HIPM_E/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016F_HIPM_ElTau: /EmbeddingRun2016-HIPM_F/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
 
 Embed2016:
+  year: 2016
   workingdir: temp/
-  cmsRun_script: ../2016/scripts/embedding_nanoAOD_16.py
+  cmsRun_script: 2016/scripts/embedding_nanoAOD_16.py
   template_crab: 2016/scripts/crabConfig-2016-TEMPLATE.py
   datasets:
     # MuTau
@@ -78,21 +82,22 @@ Embed2016:
     EmbeddingRun2016H_ElTau: /EmbeddingRun2016_H/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
 
 Embed2016_HIPM:
+  year: 2016
   workingdir: temp/
-  cmsRun_script: ../2016/scripts/embedding_nanoAOD_16_HIPM.py
+  cmsRun_script: 2016/scripts/embedding_nanoAOD_16_HIPM.py
   template_crab: 2016/scripts/crabConfig-2016-TEMPLATE.py
   datasets:
     # MuTau
-    EmbeddingRun2016B_ver1_MuTau: /EmbeddingRun2016-HIPM_B_ver1/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016B_ver2_MuTau: /EmbeddingRun2016-HIPM_B_ver2/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016C_MuTau: /EmbeddingRun2016-HIPM_C/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016D_MuTau: /EmbeddingRun2016-HIPM_D/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016E_MuTau: /EmbeddingRun2016-HIPM_E/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016F_MuTau: /EmbeddingRun2016-HIPM_F/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver1_MuTau: /EmbeddingRun2016-HIPM_B_ver1/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver2_MuTau: /EmbeddingRun2016-HIPM_B_ver2/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016C_HIPM_MuTau: /EmbeddingRun2016-HIPM_C/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016D_HIPM_MuTau: /EmbeddingRun2016-HIPM_D/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016E_HIPM_MuTau: /EmbeddingRun2016-HIPM_E/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016F_HIPM_MuTau: /EmbeddingRun2016-HIPM_F/MuTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
     # ETau
-    EmbeddingRun2016B_ver1_ElTau: /EmbeddingRun2016-HIPM_B_ver1/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016B_ver2_ElTau: /EmbeddingRun2016-HIPM_B_ver2/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016C_ElTau: /EmbeddingRun2016-HIPM_C/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016D_ElTau: /EmbeddingRun2016-HIPM_D/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016E_ElTau: /EmbeddingRun2016-HIPM_E/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-    EmbeddingRun2016F_ElTau: /EmbeddingRun2016-HIPM_F/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver1_ElTau: /EmbeddingRun2016-HIPM_B_ver1/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016B_HIPM_ver2_ElTau: /EmbeddingRun2016-HIPM_B_ver2/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016C_HIPM_ElTau: /EmbeddingRun2016-HIPM_C/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016D_HIPM_ElTau: /EmbeddingRun2016-HIPM_D/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016E_HIPM_ElTau: /EmbeddingRun2016-HIPM_E/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2016F_HIPM_ElTau: /EmbeddingRun2016-HIPM_F/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER

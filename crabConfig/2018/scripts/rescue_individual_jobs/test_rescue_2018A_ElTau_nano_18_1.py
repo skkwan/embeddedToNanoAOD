@@ -22,24 +22,26 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1)
+    input = cms.untracked.int32(-1)
 )
 
 # Input source
 process.source = cms.Source("PoolSource",
     fileNames = cms.untracked.vstring(
-#    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/408d598c-12f0-49b3-b056-754b783816f4.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/0c687e2a-58dd-4f69-a480-80f4656cb0b5.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/b0594417-daa3-4db7-a290-03a3ff203884.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/f39d1678-1786-42ae-b2b2-1ee29df895d0.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/09d36cb5-03d1-4fa6-b5e9-8e7155ec73e4.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/7c63c180-9bda-41e8-b034-3af158a8f4b0.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/b0594417-daa3-4db7-a290-03a3ff203884.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/b0594417-daa3-4db7-a290-03a3ff203884.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/f39d1678-1786-42ae-b2b2-1ee29df895d0.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/09d36cb5-03d1-4fa6-b5e9-8e7155ec73e4.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/863edd3f-c03b-4d00-b099-95da9b1f31e3.root', 
-    'root://cmsxrootd.fnal.gov///store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/25195a57-f1c0-4010-8da5-887e3e893330.root'),
+#         '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/408d598c-12f0-49b3-b056-754b783816f4.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/0c687e2a-58dd-4f69-a480-80f4656cb0b5.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/b0594417-daa3-4db7-a290-03a3ff203884.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/f39d1678-1786-42ae-b2b2-1ee29df895d0.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/09d36cb5-03d1-4fa6-b5e9-8e7155ec73e4.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/7c63c180-9bda-41e8-b034-3af158a8f4b0.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/b0594417-daa3-4db7-a290-03a3ff203884.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/b0594417-daa3-4db7-a290-03a3ff203884.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/f39d1678-1786-42ae-b2b2-1ee29df895d0.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/09d36cb5-03d1-4fa6-b5e9-8e7155ec73e4.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/863edd3f-c03b-4d00-b099-95da9b1f31e3.root', 
+    '/store/group/rucio/pog_tau_group/ul_embedding/large_miniAOD_v2/ElTauFinalState/EmbeddingRun2018A/MINIAOD/inputDoubleMu_106X_ULegacy_miniAOD-v1/0000/25195a57-f1c0-4010-8da5-887e3e893330.root'
+
+),
     secondaryFileNames = cms.untracked.vstring()
 )
 
@@ -445,8 +447,8 @@ process.source.lumisToProcess = cms.untracked.VLuminosityBlockRange( (
     "315357:275-315357:275", "315357:319-315357:319", "315357:343-315357:343", "315357:350-315357:350", "315357:352-315357:352", 
     "315357:366-315357:366", "315357:374-315357:374", "315357:388-315357:388", "315357:110-315357:110", "315357:125-315357:125", 
     "315357:130-315357:130", "315357:147-315357:147", "315357:150-315357:150", "315357:166-315357:166", "315357:191-315357:191", 
-    "315357:205-315357:205", "315357:227-315357:227", "315357:242-315357:242"
- ) )
+    "315357:205-315357:205", "315357:227-315357:227", "315357:242-315357:242"))
+
 process.options = cms.untracked.PSet(
 
 )
@@ -467,7 +469,7 @@ process.NANOAODoutput = cms.OutputModule("NanoAODOutputModule",
         dataTier = cms.untracked.string('NANOAOD'),
         filterName = cms.untracked.string('')
     ),
-    fileName = cms.untracked.string('file:test_rescue_2018A_ElTau_nano_18_1.root'),
+    fileName = cms.untracked.string('file:test_nano_18_Ru2018A_ElTau_1.root'),
     outputCommands = process.NANOAODEventContent.outputCommands
 )
 
