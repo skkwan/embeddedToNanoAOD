@@ -7,12 +7,15 @@ config = yaml.safe_load(config_file)
 
 os.system("mkdir -p temp/")
 
-#for era in ["Embed2018", "Embed2017", "Embed2016_HIPM", "Embed2016"]:
-for era in ["Embed2017"]:
+# for era in ["Embed2018", "Embed2017", "Embed2016_HIPM", "Embed2016"]:
+#for era in ["Embed2018", "Embed2017"]:
+for era in ["Embed2016_HIPM", "Embed2016"]:
    for name in config[era]["datasets"]:
       # Make the crab file
       crabCfgName = "temp/crabConfig-test-{}.py".format(name)
-      os.system("cp {} {}".format(config[era]["template_crab"], crabCfgName))
+      command = "cp {} {}".format(config[era]["template_crab"], crabCfgName)
+      print(command)
+      os.system(command)
 
       # Replace the strings in the crab cfg
       with open(crabCfgName, 'r') as file:
@@ -38,3 +41,7 @@ for era in ["Embed2017"]:
          file.write(data)
 
       
+
+      command = "crab submit -c {}".format(crabCfgName)
+      print(command)
+      os.system(command)

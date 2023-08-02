@@ -1,0 +1,546 @@
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016C_HIPM_MuTau
+Task name:			230730_002226:skkwan_crab_EmbeddingRun2016C_HIPM_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002226%3Askkwan_crab_EmbeddingRun2016C_HIPM_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002226%3Askkwan_crab_EmbeddingRun2016C_HIPM_MuTau&from=1690672946000&to=now
+Status on the scheduler:	FAILED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0106/skkwan/230730_002226:skkwan_crab_EmbeddingRun2016C_HIPM_MuTau/AutomaticSplitting/
+
+Jobs status:                    failed       		  9.1% ( 1/11)
+				finished     		 90.9% (10/11)
+
+Publication status of 1 dataset(s):	done         		 90.9% (10/11)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		  9.1% ( 1/11)
+
+Output dataset:			/EmbeddingRun2016-HIPM_C/skkwan-EmbeddingRun2016C_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_C%2Fskkwan-EmbeddingRun2016C_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 50115
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1401MB min, 1620MB max, 1486MB ave
+ * Runtime: 0:01:44 min, 6:06:08 max, 3:14:01 ave
+ * CPU eff: 27% min, 95% max, 93% ave
+ * Waste: 0:32:43 (1% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016C_HIPM_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_HIPM_MuTau
+Task name:			230730_002248:skkwan_crab_EmbeddingRun2016F_HIPM_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0144.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002248%3Askkwan_crab_EmbeddingRun2016F_HIPM_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002248%3Askkwan_crab_EmbeddingRun2016F_HIPM_MuTau&from=1690672968000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0144/skkwan/230730_002248:skkwan_crab_EmbeddingRun2016F_HIPM_MuTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (7/7)
+
+Publication status of 1 dataset(s):	done         		100.0% (7/7)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_F/skkwan-EmbeddingRun2016F_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_F%2Fskkwan-EmbeddingRun2016F_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1501MB min, 1578MB max, 1101MB ave
+ * Runtime: 0:15:57 min, 7:27:16 max, 5:30:53 ave
+ * CPU eff: 88% min, 195% max, 120% ave
+ * Waste: 12:15:56 (24% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_HIPM_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver1_MuTau
+Task name:			230730_002309:skkwan_crab_EmbeddingRun2016B_HIPM_ver1_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0155.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002309%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver1_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002309%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver1_MuTau&from=1690672989000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0155/skkwan/230730_002309:skkwan_crab_EmbeddingRun2016B_HIPM_ver1_MuTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (1/1)
+
+Publication status of 1 dataset(s):	done         		100.0% (1/1)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_B_ver1/skkwan-EmbeddingRun2016B_HIPM_ver1_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_B_ver1%2Fskkwan-EmbeddingRun2016B_HIPM_ver1_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1387MB min, 1637MB max, 1638MB ave
+ * Runtime: 0:11:37 min, 0:59:25 max, 0:59:25 ave
+ * CPU eff: 90% min, 90% max, 90% ave
+ * Waste: 0:02:43 (4% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver1_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016E_HIPM_MuTau
+Task name:			230730_002332:skkwan_crab_EmbeddingRun2016E_HIPM_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0107.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002332%3Askkwan_crab_EmbeddingRun2016E_HIPM_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002332%3Askkwan_crab_EmbeddingRun2016E_HIPM_MuTau&from=1690673012000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0107/skkwan/230730_002332:skkwan_crab_EmbeddingRun2016E_HIPM_MuTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (12/12)
+
+Publication status of 1 dataset(s):	done         		100.0% (12/12)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_E/skkwan-EmbeddingRun2016E_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_E%2Fskkwan-EmbeddingRun2016E_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1572MB min, 1593MB max, 1292MB ave
+ * Runtime: 0:15:59 min, 7:16:11 max, 5:15:27 ave
+ * CPU eff: 90% min, 194% max, 110% ave
+ * Waste: 13:24:07 (18% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016E_HIPM_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver2_ElTau
+Task name:			230730_002354:skkwan_crab_EmbeddingRun2016B_HIPM_ver2_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0144.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002354%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver2_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002354%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver2_ElTau&from=1690673034000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0144/skkwan/230730_002354:skkwan_crab_EmbeddingRun2016B_HIPM_ver2_ElTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (20/20)
+
+Publication status of 1 dataset(s):	done         		100.0% (20/20)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_B_ver2/skkwan-EmbeddingRun2016B_HIPM_ver2_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_B_ver2%2Fskkwan-EmbeddingRun2016B_HIPM_ver2_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 53MB min, 1628MB max, 777MB ave
+ * Runtime: 0:03:19 min, 8:01:52 max, 5:07:59 ave
+ * CPU eff: 30% min, 212% max, 136% ave
+ * Waste: 55:44:17 (35% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver2_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver1_ElTau
+Task name:			230730_002417:skkwan_crab_EmbeddingRun2016B_HIPM_ver1_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002417%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver1_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002417%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver1_ElTau&from=1690673057000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0199/skkwan/230730_002417:skkwan_crab_EmbeddingRun2016B_HIPM_ver1_ElTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (1/1)
+
+Publication status of 1 dataset(s):	done         		100.0% (1/1)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_B_ver1/skkwan-EmbeddingRun2016B_HIPM_ver1_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_B_ver1%2Fskkwan-EmbeddingRun2016B_HIPM_ver1_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1441MB min, 1508MB max, 1509MB ave
+ * Runtime: 0:09:04 min, 1:10:51 max, 1:10:51 ave
+ * CPU eff: 88% min, 88% max, 88% ave
+ * Waste: 0:04:50 (6% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver1_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver2_MuTau
+Task name:			230730_002439:skkwan_crab_EmbeddingRun2016B_HIPM_ver2_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0121.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002439%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver2_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002439%3Askkwan_crab_EmbeddingRun2016B_HIPM_ver2_MuTau&from=1690673079000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0121/skkwan/230730_002439:skkwan_crab_EmbeddingRun2016B_HIPM_ver2_MuTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (16/16)
+
+Publication status of 1 dataset(s):	done         		100.0% (16/16)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_B_ver2/skkwan-EmbeddingRun2016B_HIPM_ver2_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_B_ver2%2Fskkwan-EmbeddingRun2016B_HIPM_ver2_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1442MB min, 1580MB max, 1064MB ave
+ * Runtime: 0:15:40 min, 8:01:25 max, 6:23:16 ave
+ * CPU eff: 90% min, 160% max, 117% ave
+ * Waste: 30:40:12 (23% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016B_HIPM_ver2_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_HIPM_ElTau
+Task name:			230730_002501:skkwan_crab_EmbeddingRun2016F_HIPM_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0197.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002501%3Askkwan_crab_EmbeddingRun2016F_HIPM_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002501%3Askkwan_crab_EmbeddingRun2016F_HIPM_ElTau&from=1690673101000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0197/skkwan/230730_002501:skkwan_crab_EmbeddingRun2016F_HIPM_ElTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (7/7)
+
+Publication status of 1 dataset(s):	done         		100.0% (7/7)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_F/skkwan-EmbeddingRun2016F_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_F%2Fskkwan-EmbeddingRun2016F_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1407MB min, 1577MB max, 1320MB ave
+ * Runtime: 0:15:47 min, 6:41:27 max, 5:38:15 ave
+ * CPU eff: 93% min, 157% max, 106% ave
+ * Waste: 6:29:34 (14% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_HIPM_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016D_HIPM_MuTau
+Task name:			230730_002521:skkwan_crab_EmbeddingRun2016D_HIPM_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002521%3Askkwan_crab_EmbeddingRun2016D_HIPM_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002521%3Askkwan_crab_EmbeddingRun2016D_HIPM_MuTau&from=1690673122000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0196/skkwan/230730_002521:skkwan_crab_EmbeddingRun2016D_HIPM_MuTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (13/13)
+
+Publication status of 1 dataset(s):	done         		100.0% (13/13)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_D/skkwan-EmbeddingRun2016D_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_D%2Fskkwan-EmbeddingRun2016D_HIPM_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1518MB min, 1708MB max, 1339MB ave
+ * Runtime: 0:16:02 min, 8:01:40 max, 5:56:31 ave
+ * CPU eff: 86% min, 181% max, 107% ave
+ * Waste: 16:28:55 (18% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016D_HIPM_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016D_HIPM_ElTau
+Task name:			230730_002543:skkwan_crab_EmbeddingRun2016D_HIPM_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002543%3Askkwan_crab_EmbeddingRun2016D_HIPM_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002543%3Askkwan_crab_EmbeddingRun2016D_HIPM_ElTau&from=1690673143000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0198/skkwan/230730_002543:skkwan_crab_EmbeddingRun2016D_HIPM_ElTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (12/12)
+
+Publication status of 1 dataset(s):	done         		100.0% (12/12)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_D/skkwan-EmbeddingRun2016D_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_D%2Fskkwan-EmbeddingRun2016D_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1418MB min, 1708MB max, 1293MB ave
+ * Runtime: 0:16:07 min, 6:52:10 max, 5:43:40 ave
+ * CPU eff: 93% min, 177% max, 104% ave
+ * Waste: 10:45:29 (14% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016D_HIPM_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016C_HIPM_ElTau
+Task name:			230730_002605:skkwan_crab_EmbeddingRun2016C_HIPM_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0155.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002605%3Askkwan_crab_EmbeddingRun2016C_HIPM_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002605%3Askkwan_crab_EmbeddingRun2016C_HIPM_ElTau&from=1690673165000&to=now
+Status on the scheduler:	FAILED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0155/skkwan/230730_002605:skkwan_crab_EmbeddingRun2016C_HIPM_ElTau/AutomaticSplitting/
+
+Jobs status:                    failed       		 10.0% ( 1/10)
+				finished     		 90.0% ( 9/10)
+
+Publication status of 1 dataset(s):	done         		 90.0% ( 9/10)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		 10.0% ( 1/10)
+
+Output dataset:			/EmbeddingRun2016-HIPM_C/skkwan-EmbeddingRun2016C_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_C%2Fskkwan-EmbeddingRun2016C_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+Could not find exit code details for 1 jobs.
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+
+Summary of run jobs:
+ * Memory: 31MB min, 1599MB max, 836MB ave
+ * Runtime: 0:01:36 min, 7:05:19 max, 3:48:40 ave
+ * CPU eff: 31% min, 188% max, 142% ave
+ * Waste: 24:54:53 (37% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016C_HIPM_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016E_HIPM_ElTau
+Task name:			230730_002627:skkwan_crab_EmbeddingRun2016E_HIPM_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0119.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230730_002627%3Askkwan_crab_EmbeddingRun2016E_HIPM_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230730_002627%3Askkwan_crab_EmbeddingRun2016E_HIPM_ElTau&from=1690673187000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0119/skkwan/230730_002627:skkwan_crab_EmbeddingRun2016E_HIPM_ElTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (14/14)
+
+Publication status of 1 dataset(s):	done         		100.0% (14/14)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_E/skkwan-EmbeddingRun2016E_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_E%2Fskkwan-EmbeddingRun2016E_HIPM_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1486MB min, 1708MB max, 1126MB ave
+ * Runtime: 0:16:18 min, 6:08:48 max, 4:46:27 ave
+ * CPU eff: 86% min, 203% max, 112% ave
+ * Waste: 18:34:51 (22% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016E_HIPM_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016H_MuTau
+Task name:			230727_213636:skkwan_crab_EmbeddingRun2016H_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0121.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230727_213636%3Askkwan_crab_EmbeddingRun2016H_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230727_213636%3Askkwan_crab_EmbeddingRun2016H_MuTau&from=1690490196000&to=now
+Status on the scheduler:	FAILED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0121/skkwan/230727_213636:skkwan_crab_EmbeddingRun2016H_MuTau/AutomaticSplitting/
+
+Jobs status:                    failed       		  3.4% ( 1/29)
+				finished     		 96.6% (28/29)
+
+Publication status of 1 dataset(s):	done         		 96.6% (28/29)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		  3.4% ( 1/29)
+
+Output dataset:			/EmbeddingRun2016_H/skkwan-EmbeddingRun2016H_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016_H%2Fskkwan-EmbeddingRun2016H_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 50115
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+
+Summary of run jobs:
+ * Memory: 1654MB min, 1654MB max, 1543MB ave
+ * Runtime: 0:02:29 min, 8:01:14 max, 5:08:53 ave
+ * CPU eff: 11% min, 97% max, 96% ave
+ * Waste: 1:36:28 (1% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016H_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_ElTau
+Task name:			230727_213114:skkwan_crab_EmbeddingRun2016F_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0197.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230727_213114%3Askkwan_crab_EmbeddingRun2016F_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230727_213114%3Askkwan_crab_EmbeddingRun2016F_ElTau&from=1690489874000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0197/skkwan/230727_213114:skkwan_crab_EmbeddingRun2016F_ElTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (6/6)
+
+Publication status of 1 dataset(s):	done         		100.0% (6/6)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_F/skkwan-EmbeddingRun2016F_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_F%2Fskkwan-EmbeddingRun2016F_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1562MB min, 1588MB max, 1562MB ave
+ * Runtime: 0:15:41 min, 6:20:41 max, 5:35:01 ave
+ * CPU eff: 94% min, 97% max, 96% ave
+ * Waste: 0:11:01 (1% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016G_ElTau
+Task name:			230727_213703:skkwan_crab_EmbeddingRun2016G_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230727_213703%3Askkwan_crab_EmbeddingRun2016G_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230727_213703%3Askkwan_crab_EmbeddingRun2016G_ElTau&from=1690490223000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0198/skkwan/230727_213703:skkwan_crab_EmbeddingRun2016G_ElTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (23/23)
+
+Publication status of 1 dataset(s):	done         		100.0% (23/23)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016_G/skkwan-EmbeddingRun2016G_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016_G%2Fskkwan-EmbeddingRun2016G_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1526MB min, 1594MB max, 1549MB ave
+ * Runtime: 0:15:44 min, 7:49:37 max, 6:23:53 ave
+ * CPU eff: 93% min, 97% max, 95% ave
+ * Waste: 1:41:43 (1% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016G_ElTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016G_MuTau
+Task name:			230727_213729:skkwan_crab_EmbeddingRun2016G_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0194.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230727_213729%3Askkwan_crab_EmbeddingRun2016G_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230727_213729%3Askkwan_crab_EmbeddingRun2016G_MuTau&from=1690490249000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0194/skkwan/230727_213729:skkwan_crab_EmbeddingRun2016G_MuTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (25/25)
+
+Publication status of 1 dataset(s):	done         		100.0% (25/25)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016_G/skkwan-EmbeddingRun2016G_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016_G%2Fskkwan-EmbeddingRun2016G_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Summary of run jobs:
+ * Memory: 1634MB min, 1666MB max, 1573MB ave
+ * Runtime: 0:15:47 min, 6:16:19 max, 5:11:37 ave
+ * CPU eff: 93% min, 97% max, 96% ave
+ * Waste: 1:14:25 (1% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016G_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_MuTau
+Task name:			230727_213450:skkwan_crab_EmbeddingRun2016F_MuTau
+Grid scheduler - Task Worker:	crab3@vocms0144.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230727_213450%3Askkwan_crab_EmbeddingRun2016F_MuTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230727_213450%3Askkwan_crab_EmbeddingRun2016F_MuTau&from=1690490090000&to=now
+Status on the scheduler:	COMPLETED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0144/skkwan/230727_213450:skkwan_crab_EmbeddingRun2016F_MuTau/AutomaticSplitting/
+
+Jobs status:                    finished     		100.0% (6/6)
+
+Publication status of 1 dataset(s):	done         		100.0% (6/6)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/EmbeddingRun2016-HIPM_F/skkwan-EmbeddingRun2016F_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016-HIPM_F%2Fskkwan-EmbeddingRun2016F_MuTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1658MB min, 1667MB max, 1561MB ave
+ * Runtime: 0:15:39 min, 6:00:43 max, 5:25:49 ave
+ * CPU eff: 95% min, 97% max, 96% ave
+ * Waste: 0:03:17 (0% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016F_MuTau/crab.log
+CRAB project directory:		/afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016H_ElTau
+Task name:			230727_213756:skkwan_crab_EmbeddingRun2016H_ElTau
+Grid scheduler - Task Worker:	crab3@vocms0122.cern.ch - crab-prod-tw02
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230727_213756%3Askkwan_crab_EmbeddingRun2016H_ElTau
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=skkwan&var-task=230727_213756%3Askkwan_crab_EmbeddingRun2016H_ElTau&from=1690490276000&to=now
+Status on the scheduler:	FAILED
+
+The job splitting of this task is 'Automatic', please refer to this FAQ for a description of the jobs status summary:
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ#What_is_the_Automatic_splitting
+More details of Automatic Splitting process for this task (including possible failures) are in the Dagman Log files in:
+https://cmsweb.cern.ch:8443/scheddmon/0122/skkwan/230727_213756:skkwan_crab_EmbeddingRun2016H_ElTau/AutomaticSplitting/
+
+Jobs status:                    failed       		  2.8% ( 1/36)
+				finished     		 97.2% (35/36)
+
+Publication status of 1 dataset(s):	done         		 97.2% (35/36)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		  2.8% ( 1/36)
+
+Output dataset:			/EmbeddingRun2016_H/skkwan-EmbeddingRun2016H_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FEmbeddingRun2016_H%2Fskkwan-EmbeddingRun2016H_ElTau_106X_UL18_MiniAODv1_NanoAODv9-00000000000000000000000000000000%2FUSER&instance=prod%2Fphys03
+
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 50115
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+
+Summary of run jobs:
+ * Memory: 40MB min, 1695MB max, 1475MB ave
+ * Runtime: 0:01:09 min, 7:08:58 max, 4:11:07 ave
+ * CPU eff: 11% min, 97% max, 95% ave
+ * Waste: 1:30:52 (1% of total)
+
+Log file is /afs/hep.wisc.edu/user/skkwan/public/embeddedMiniToNano/CMSSW_10_6_30/src/embeddedToNanoAOD/crabConfig/crab_projects/crab_EmbeddingRun2016H_ElTau/crab.log
