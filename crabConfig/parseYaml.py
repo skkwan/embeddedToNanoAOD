@@ -8,8 +8,7 @@ config = yaml.safe_load(config_file)
 os.system("mkdir -p temp/")
 
 # for era in ["Embed2018", "Embed2017", "Embed2016_HIPM", "Embed2016"]:
-#for era in ["Embed2018", "Embed2017"]:
-for era in ["Embed2016_HIPM", "Embed2016"]:
+for era in ["Embed2018"]:
    for name in config[era]["datasets"]:
       # Make the crab file
       crabCfgName = "temp/crabConfig-test-{}.py".format(name)
@@ -42,6 +41,6 @@ for era in ["Embed2016_HIPM", "Embed2016"]:
 
       
 
-      command = "crab submit -c {}".format(crabCfgName)
-      print(command)
-      os.system(command)
+      # command = "crab submit -c {}".format(crabCfgName)
+      # print(command)
+      # os.system(command)

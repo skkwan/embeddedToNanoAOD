@@ -8,8 +8,8 @@ Embed2018:
   # Directory where crab config files will be placed
   workingdir: temp/
   # Path from inside temp/ to the cmsRun script
-  cmsRun_script: 2018/scripts/embedding_nanoAOD_18.py
-  template_crab: 2018/scripts/crabConfig-2018-TEMPLATE.py
+  cmsRun_script: 2018/scripts/embedding_miniaod_to_nanoaod_2018_cfg.py
+  template_crab: crabConfig-TEMPLATE.py
 
   datasets:
     # MuTau
@@ -22,7 +22,11 @@ Embed2018:
     EmbeddingRun2018B_ElTau: /EmbeddingRun2018B/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
     EmbeddingRun2018C_ElTau: /EmbeddingRun2018C/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
     EmbeddingRun2018D_ElTau: /EmbeddingRun2018D/ElTauFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
-
+    # EMu:
+    EmbeddingRun2018A_EMu: /EmbeddingRun2018A/ElMuFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2018B_EMu: /EmbeddingRun2018B/ElMuFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2018C_EMu: /EmbeddingRun2018C/ElMuFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
+    EmbeddingRun2018D_EMu: /EmbeddingRun2018D/ElMuFinalState-inputDoubleMu_106X_ULegacy_miniAOD-v1/USER
 
 Embed2017:
   year: 2017
