@@ -1,5 +1,0 @@
-2017,EmbeddingRun2017B-MuTau,/EmbeddingRun2017B/MuTauFinalState-inputDoubleMu_94X_miniAOD-v2/USER
-2017,EmbeddingRun2017C-MuTau,/EmbeddingRun2017C/MuTauFinalState-inputDoubleMu_94X_miniAOD-v2/USER
-2017,EmbeddingRun2017D-MuTau,/EmbeddingRun2017D/MuTauFinalState-inputDoubleMu_94X_miniAOD-v2/USER
-2017,EmbeddingRun2017E-MuTau,/EmbeddingRun2017E/MuTauFinalState-inputDoubleMu_94X_miniAOD-v2/USER
-2017,EmbeddingRun2017F-MuTau,/EmbeddingRun2017F/MuTauFinalState-inputDoubleMu_94X_miniAOD-v2/USER

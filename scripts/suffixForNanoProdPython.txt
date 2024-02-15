@@ -1,5 +1,0 @@
-process.source = cms.Source("PoolSource",
-                            fileNames = cms.untracked.vstring('INPUT.ROOT')
-			    )	      
-
-process.NANOAODoutput.fileName = cms.untracked.string('OUTPUT.ROOT')
